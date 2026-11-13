@@ -1,5 +1,7 @@
 Relatório Técnico:
 
+
+PARTE 3 - DEADLOCK
 O cenário desse problema representa o travamento das threads por espera circular. Ou seja, uma thread segura o recurso que a outra precisa para continuar.
 Isso acontece pela combinação das quatro condições de Coffman (exclusão mútua, espera circular, manter-e-esperar, não-preempção).
 No exemplo sem correção, é criado dois locks (Lock A e Lock B), onde cada um possui apenas um dono por vez, e duas funções para representar as threads trabalhando.
