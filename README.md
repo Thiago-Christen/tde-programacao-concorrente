@@ -6,5 +6,7 @@ O cenário desse problema representa o travamento das threads por espera circula
 Isso acontece pela combinação das quatro condições de Coffman (exclusão mútua, espera circular, manter-e-esperar, não-preempção).
 No exemplo sem correção, é criado dois locks (Lock A e Lock B), onde cada um possui apenas um dono por vez, e duas funções para representar as threads trabalhando.
 Quando uma thread está com o lock de um recurso, outras threads não conseguem acessá-lo. Portanto, a Thread 1 segura o lock A e espera o B, que está com a Thread 2. A Thread 2 segura o lock B e espera o A, que está com a Thread 1, criando uma espera circular. Como ninguém retira o recurso a força, ocorre o deadlock.
+![Saída com deadlock](parte3-deadlock/prints/image.png)
 Já no exemplo corrigido, foi possível contornar o erro quebrando a espera circular utilizando hierarquia de recursos.
 Isso foi possível fazendo ambas as threads tentarem pegar o mesmo recurso primeiro. Ou seja, pegar o lock A antes do lock B. Desse jeito, a thread que não consegue o A espera sem segurar nenhum lock, então a outra consegue terminar e liberar tudo.
+![Saída corrigida sem deadlock](parte3-deadlock/prints/image-1.png)
