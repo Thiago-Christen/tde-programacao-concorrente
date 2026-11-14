@@ -35,7 +35,7 @@ def jantar(p):
                 estado[p] = "pensando"
                 return
 
-for iniciar in range(10):
+for iniciar in range(5):
     for p in range(N):
         jantar(p)
 
