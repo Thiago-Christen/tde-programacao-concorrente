@@ -1,4 +1,15 @@
+Integrantes: Gabriel Quadros Garcia Pimentel, Gustavo Iichiro Nagata, Kauane Santana da Rosa, Thiago Christen Pereira Soares
+
 Relatório Técnico:
+
+PARTE 1 - JANTAR DOS FILÓSOFOS O problema encontrado diante do Jantar dos Filósofos foi a questão da espera circular, que como exemplifica o documento "Filosofos_com_impasse.py" quando ocorre a execução, como não há uma ordem global de aquisição dos garfos definida, todos os filósofos pegam o garfo da esquerda e bloqueiam ele, dessa forma passagens seguintes são bloqueadas pela falta de recurso necessária que está previamente bloqueada. Essa limitação se da principalmente pelas condições de Coffman(Exclusão mútua, espera circular, manter-e-esperar, não-preempção).
+
+Print/Logs "Filosofos_com_impasse.py"
+ 
+Agora partindo para o exemplo contido no arquivo "Filosofos-protocolo.py", é utilizado uma estratégia de hierarquia de recursos, esse protocolo juntamente com o escalonamento utilizado, evita o impasse e a inanição, pois define uma ordem global, ou seja, através de condições, estados e principalmente a definição das variáveis "left" e "right" que definem a aquisição do primeiro garfo de menor índice e depois o de maior, o exemplo 2 é capaz de definir a sequência onde como temos 5 garfos para 5 pessoas, até 2 delas podem comer no mesmo ciclo(sem duplas fixas) e dessa forma hora que liberam os recursos(garfos), outros filósofos podem adquirir os garfos e avançar na execução. Para essa implementação definimos o limite de 5 refeições completas por filósofo para que a execução seja encerrada.
+
+Print/Logs do exemplo "Filosofos_protocolo.py" 
+... Até completar as 5 refeições na 17° Passada.
 
 Parte 2 — Threads e semáforos
 
