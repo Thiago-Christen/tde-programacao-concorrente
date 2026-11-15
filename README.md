@@ -4,9 +4,9 @@ Linguagem utilizada: Python
 
 Requisitos:
 
-Python 3.10+
-Visual Studio Code
-Extensão do Python da Microsoft no VS Code
+1. Python 3.10+
+2. Visual Studio Code
+3. Extensão do Python da Microsoft no VS Code
 
 Instruções de execução:
 
