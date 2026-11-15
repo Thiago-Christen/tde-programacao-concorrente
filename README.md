@@ -1,5 +1,7 @@
 Grupo: GRUPO 8 DO TDE 2 - PROGRAMAÇÃO CONCORRENTE
 
+Link do vídeo: https://www.youtube.com/watch?v=eQz6SnzLwXA
+
 Linguagem utilizada: Python
 
 Requisitos:
