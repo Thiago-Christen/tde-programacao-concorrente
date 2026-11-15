@@ -1,3 +1,29 @@
+Grupo: GRUPO 8 DO TDE 2 - PROGRAMAÇÃO CONCORRENTE
+
+Linguagem utilizada: Python
+
+Requisitos:
+
+Python 3.10+
+Visual Studio Code
+Extensão do Python da Microsoft no VS Code
+
+Instruções de execução:
+
+1. Baixe o repositório, clique no botão Code, depois vá em Download ZIP no GitHub.
+
+2. Extraia o arquivo ZIP e abra a pasta extraída no Visual Studio Code.
+
+3. Escolha uma das 3 pastas que tem as partes do TDE 2 (parte1-filosofos, parte2-semaforo e parte3-deadlock).
+
+4. Selecione o arquivo Python que deseja e execute por meio do botão ▷ 
+
+5. Caso o botão não esteja visível, clique em Run (na barra superior) e em Run Without Debugging. Um aviso do Visual Studio Code pode aparecer para autorizar que você confia na pasta,  clique em Trust Folder & Continue. Dependendo de como o VS Code está configurado no seu computador, pode ser necessário selecionar Python Debugger na barra de pesquisa.
+
+6. Ao executar o arquivo em Python, o resultado aparecerá no terminal 
+
+Compilação: não é necessário executar um comando manualmente para realizar a compilação, o Interpretador do Python já realiza isso internamente.
+
 Integrantes: Gabriel Quadros Garcia Pimentel, Gustavo Iichiro Nagata, Kauane Santana da Rosa, Thiago Christen Pereira Soares
 
 Relatório Técnico:
